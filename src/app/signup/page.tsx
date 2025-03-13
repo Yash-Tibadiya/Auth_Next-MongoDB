@@ -25,7 +25,9 @@ export default function SignupPage() {
       router.push("/login");
     } catch (error) {
       console.log("Signup failed", error);
-      toast.error("Signup failed");
+      toast.error("Signup failed. User already exists.");
+    } finally {
+      setLoading(false); // Ensure loading is set to false after login attempt
     }
   };
 

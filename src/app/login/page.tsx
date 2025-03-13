@@ -24,7 +24,9 @@ export default function LoginPage() {
       router.push("/profile");
     } catch (error) {
       console.log("Login failed", error);
-      toast.error("Login failed");
+      toast.error("Login failed. Please check your credentials.");
+    } finally {
+      setLoading(false); // Ensure loading is set to false after login attempt
     }
   };
 
