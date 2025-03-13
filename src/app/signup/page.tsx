@@ -88,7 +88,7 @@ export default function SignupPage() {
       </button>
 
       <div className="flex flex-row justify-center w-80 items-center m-4">
-        <p><pre>Already have an account? </pre></p>
+        <pre>Already have an account? </pre>
         <Link href="/login" className="text-blue-500">Login</Link>
       </div>
 
