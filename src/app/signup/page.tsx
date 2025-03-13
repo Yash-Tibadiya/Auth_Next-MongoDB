@@ -84,7 +84,7 @@ export default function SignupPage() {
         onClick={onSignup}
         disabled={buttonDisabled}
       >
-        {buttonDisabled ? "No signup" : "Signup"}
+        {buttonDisabled ? "No input" : "Signup"}
       </button>
 
       <div className="flex flex-row justify-center w-80 items-center m-4">
